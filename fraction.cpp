@@ -16,3 +16,16 @@ fraction::~fraction() {
 
 }
 
+const int fraction::getNumerateur() const {
+	return _numerateur;
+}
+const int fraction::getDenominateur() const {
+	return _denominateur;
+}
+void fraction::setNumerateur(const int iNumerateur) {
+	_numerateur = iNumerateur;
+}
+void fraction::setDenominateur(const int iDenominateur) {
+	_denominateur = iDenominateur;
+}
+
