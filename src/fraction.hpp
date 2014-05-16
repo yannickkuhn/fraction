@@ -9,6 +9,7 @@
 #define FRACTION_HPP_
 
 #include <string>
+#include <sstream>
 
 using namespace std;
 

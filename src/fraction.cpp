@@ -33,6 +33,8 @@ void Fraction::setDenominateur(const int iDenominateur) {
 }
 
 string Fraction::afficher() {
-	return _numerateur + "/" + _denominateur;
+	stringstream nss (stringstream::in | stringstream::out);
+	nss << _numerateur << "/" << _denominateur;
+	return nss.str();
 }
 
