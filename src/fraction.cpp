@@ -25,6 +25,7 @@ const int Fraction::getNumerateur() const {
 const int Fraction::getDenominateur() const {
 	return _denominateur;
 }
+
 void Fraction::setNumerateur(const int iNumerateur) {
 	_numerateur = iNumerateur;
 }
@@ -38,3 +39,26 @@ string Fraction::afficher() {
 	return nss.str();
 }
 
+void Fraction::addition(int iNombre) {
+	_numerateur += iNombre;
+}
+
+void Fraction::addition(const Fraction &iF) {
+
+	// on calcule le coefficient multiplicateur
+	float aCoefMul;
+	if(iF._denominateur >= _denominateur) {
+		aCoefMul = (float)iF.getDenominateur() / (float)_denominateur;
+		_denominateur *= aCoefMul;
+		_numerateur *= aCoefMul + iF.getNumerateur();
+	}
+	else {
+		aCoefMul = (float)_denominateur / (float)iF.getDenominateur();
+		float aIFNum = 0, aIFDen = 0;
+		aIFDen = aIFDen * aCoefMul;
+		aIFNum = aIFNum * aCoefMul;
+		_denominateur += aIFDen;
+		_numerateur += aIFNum;
+	}
+
+}

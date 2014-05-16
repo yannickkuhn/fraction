@@ -23,6 +23,8 @@ public:
 	void setNumerateur(const int iNumerateur);
 	void setDenominateur(const int iDenominateur);
 	string afficher();
+	void addition(int iNombre);
+	void addition(const Fraction &iF);
 
 private:
 	int _numerateur;
