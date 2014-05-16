@@ -2,7 +2,7 @@
  * fraction.hpp
  *
  *  Created on: 16 mai 2014
- *      Author: Yannick
+ *      Author: Yannick KUHN
  */
 
 #ifndef FRACTION_HPP_

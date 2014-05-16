@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : main.cpp
-// Author      : Yannick
+// Author      : Yannick KUHN
 // Version     : 16 mai 2014
 // Copyright   : Program
 // Description : Fraction

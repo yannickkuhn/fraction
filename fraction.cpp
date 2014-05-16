@@ -2,7 +2,7 @@
  * fraction.cpp
  *
  *  Created on: 16 mai 2014
- *      Author: Yannick
+ *      Author: Yannick KUHN
  */
 
 #include "fraction.hpp"
